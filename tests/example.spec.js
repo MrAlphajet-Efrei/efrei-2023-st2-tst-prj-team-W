@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require("@playwright/test");
 
-test("employee name dont contains integer", async ({ page }) => {
+test("employee name doesn't contain integer", async ({ page }) => {
   await page.goto("https://w.hr.dmerej.info/add_employee");
   await page.getByPlaceholder("Name").click();
   await page.getByPlaceholder("Name").fill("Joh");
